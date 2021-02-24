@@ -1,0 +1,45 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "run-p mock build:dev",
+    "build": "rollup -c",
+    "build:dev": "rollup -c rollup.config.dev.js -w",
+    "serve": "node build/server.js",
+    "mock": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "3.8.3",
+    "cross-fetch": "3.0.6",
+    "express": "4.17.1",
+    "fast-glob": "3.2.5",
+    "micromatch": "4.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.16",
+    "@babel/preset-env": "7.12.16",
+    "@babel/preset-react": "7.12.13",
+    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-commonjs": "17.1.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "11.2.0",
+    "@rollup/plugin-replace": "2.3.4",
+    "@rollup/plugin-run": "2.0.2",
+    "@rollup/plugin-virtual": "2.0.3",
+    "json-server": "0.16.3",
+    "npm-run-all": "4.1.5",
+    "rollup": "2.39.0",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-gzip": "2.5.0",
+    "rollup-plugin-styles": "3.14.1",
+    "rollup-plugin-terser": "7.0.2"
+  }
+}

@@ -1,0 +1,142 @@
+{
+    "pizzas": [
+      {
+        "id": 1,
+        "name": "margarita",
+        "img": "img/margarita.png",
+        "price": 9.99,
+        "ingredients": [],
+        "comments": [
+          {
+            "text": "bad",
+            "created": "1/3/17",
+            "score": 2,
+            "user": "Pepe",
+            "pizza": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "carbonara",
+        "img": "img/carbonara.png",
+        "price": 15.99,
+        "ingredients": [
+          {
+            "id": 3,
+            "name": "bacon",
+            "prize": 5
+          },
+          {
+            "id": 1,
+            "name": "onion",
+            "prize": 2
+          }
+        ],
+        "comments": [
+          {
+            "id": 1,
+            "text": "good",
+            "created": "1/12/16",
+            "score": 7,
+            "user": "Juan",
+            "pizza": 2
+          },
+          {
+            "id": 2,
+            "text": "awesome",
+            "created": "5/4/17",
+            "score": 9,
+            "user": "María",
+            "pizza": 2
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "barbacoa",
+        "img": "img/barbacoa.png",
+        "price": 14.99,
+        "ingredients": [
+          {
+            "id": 3,
+            "name": "bacon",
+            "prize": 5
+          },
+          {
+            "id": 1,
+            "name": "onion",
+            "prize": 2
+          },
+          {
+            "id": 2,
+            "name": "corn",
+            "prize": 2
+          }
+        ],
+        "comments": []
+      },
+      {
+        "id": 4,
+        "name": "prosciutto",
+        "img": "img/prosciutto.png",
+        "price": 12.99,
+        "ingredients": [
+          {
+            "id": 4,
+            "name": "ham",
+            "prize": 3
+          }
+        ],
+        "comments": []
+      }
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "onion",
+        "prize": 2
+      },
+      {
+        "id": 2,
+        "name": "corn",
+        "prize": 2
+      },
+      {
+        "id": 3,
+        "name": "bacon",
+        "prize": 5
+      },
+      {
+        "id": 4,
+        "name": "ham",
+        "prize": 3
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "text": "good",
+        "created": "1/12/16",
+        "score": 7,
+        "user": "Juan",
+        "pizza": 2
+      },
+      {
+        "id": 2,
+        "text": "awesome",
+        "created": "5/4/17",
+        "score": 9,
+        "user": "María",
+        "pizza": 2
+      },
+      {
+        "id": 3,
+        "text": "bad",
+        "created": "1/3/17",
+        "score": 2,
+        "user": "Pepe",
+        "pizza": 1
+      }
+    ]
+  }

@@ -1,0 +1,20 @@
+.page {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+.menu {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-xl);
+    box-sizing: border-box;
+}
+
+.link {
+    color: var(--color-primary-text);
+    text-decoration: none;
+}

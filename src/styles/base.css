@@ -1,0 +1,46 @@
+html, body {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1, .h1 {
+    font-size: 2.375rem;
+    line-height: 2.625rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 2.625rem;
+}
+h2, .h2 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 1.3125rem;
+}
+h3, .h3 {
+    font-size: 1.3125rem;
+    line-height: 1.3125rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 0rem;
+}
+h4, .h4 {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 0rem;
+}
+h5, .h5 {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-top: 1.3125rem;
+    margin-bottom: 0rem;
+}
+p, .p {
+    margin-top: 0rem;
+    margin-bottom: 1.3125rem;
+}
+@media (max-width: 960px) {
+    :root {
+      font-size: 0.875rem;
+    }
+}

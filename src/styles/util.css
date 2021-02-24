@@ -1,0 +1,21 @@
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+@media (max-width: 960px) {
+    .on-big {
+      display: none;
+    }
+}
+@media (min-width: 960px) {
+    .on-small {
+      display: none;
+    }
+}
