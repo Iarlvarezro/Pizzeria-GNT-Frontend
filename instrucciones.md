@@ -1,4 +1,4 @@
-1.- npm i -> instalar todas las librerias
+1.- npm i -> instalar todas las dependencias
 
 2.- npm start
 

@@ -9,13 +9,13 @@ export function Page({children}){
                 <nav>
                     <ul>
                         <li><a className={css.link} href="/">Carta</a></li>
-                        <li><a className={css.link} href="/pizza/add">Añadir pizza</a></li>
+                        <li><a className={css.link} href="/AddPizzas">Añadir pizza</a></li>
                         <li><a className={css.link} href="/ingredients">Ingredientes</a></li>
                     </ul>
                 </nav>
                 <div>
                     <div>Carrito</div>
-                    <div>Usuario</div>
+                    <div><a className={css.link} href="/login">Usuario</a></div>
                 </div>
             </div>
             <main>

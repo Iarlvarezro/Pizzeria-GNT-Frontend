@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Input, Butt, Page} from '../../components'
+import {Input, Butt, Page} from '../../components'
 import {DesplIng} from './components/ing-desplegable/ing-desplegable'
 import {IngList} from './components/inglist/ing-list'
 import '../../styles';
@@ -8,24 +8,24 @@ import '../../styles';
 export default function AddPizzas({ingredients}) {
     return (
         <Page>
-            <Form >
+            <div>
                     <h3>Añade una imagen</h3>
                     <Butt name="Subir imagen"/>   
-            </Form>
-            <Form >
+            </div>
+            <div>
                     <h3>Añade un nombre</h3>
                     <Input placeholder= "Nombre" /> 
-            </Form>
-            <Form >
+            </div>
+            <div>
                     <h3>Añade un precio</h3>
                     <Input placeholder= "Precio" /> 
-            </Form>
-            <Form>
+            </div>
+            <div>
                     <h3>Añade los ingredientes</h3>
                     <DesplIng ingredients = {ingredients} />
                     <IngList ingredients = {ingredients} />
                     <Butt name= "Añadir pizza a la carta"/>
-            </Form>
+            </div>
         </Page>
     )
 }
