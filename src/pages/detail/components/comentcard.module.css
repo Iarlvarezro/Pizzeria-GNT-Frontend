@@ -1,0 +1,44 @@
+.user {
+    width: 192px;
+    height: 23px;
+    margin: 0 662px 15px 0;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--grey);
+  }
+
+  .score {
+    width: 1006px;
+    height: 23px;
+    margin: 15px 0;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--grey);
+  }
+ .text {
+        width: 1006px;
+        height: 69px;
+        margin: 15px 0 0;
+        font-family: Quicksand;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--grey);
+      }
+
