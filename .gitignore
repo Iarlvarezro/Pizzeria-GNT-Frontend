@@ -1,5 +1,11 @@
+#Carpetas
 node_modules
 .vscode
 build
 public
 dist
+
+
+# Archivos
+*.md
+_db.json

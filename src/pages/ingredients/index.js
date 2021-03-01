@@ -2,8 +2,8 @@ import React from 'react';
 import { Page, Butt, Input } from '../../components'
 import { IngList } from '../Addpizza/components/inglist/ing-list'
 import '../../styles'
-export default function Ing({ ingredients }) {
 
+export default function Ing({ ingredients }) {
     return (
         <Page>
             <h2>Todos los Ingredientes</h2>

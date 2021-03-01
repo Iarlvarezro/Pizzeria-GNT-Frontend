@@ -1,7 +1,7 @@
 import React from 'react';
-import css from './comentcard.module.css'
+import css from './commentcard.module.css'
 
-export function ComentCard({user, score, text, created}){
+export function CommentCard({user, score, text, created}){
     return (
         <div >
             <div className={css.user}>{user}</div>

@@ -14,7 +14,6 @@ export default function AddPizzas({ingredients}) {
             </div>
             <div>
                     <h3>Añade un nombre</h3>
-                    <Input placeholder= "Nombre" /> 
             </div>
             <div>
                     <h3>Añade un precio</h3>
@@ -29,7 +28,7 @@ export default function AddPizzas({ingredients}) {
         </Page>
     )
 }
-AddPizzas.route = '/AddPizzas'
+AddPizzas.route = '/AddPizzas';
 AddPizzas.getData = async function (params, query) {
     const response = await fetch('http://localhost:3000/ingredients');
     return { ingredients: await response.json() }
