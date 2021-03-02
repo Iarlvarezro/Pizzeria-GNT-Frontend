@@ -16,7 +16,8 @@ export function Dropdown(props) {
         }).map((option) => {
             return String(option.value)
         })
-    }
+    };
+
     useEffect(() => {
         if (open) {
             onOpen();
@@ -36,35 +37,34 @@ export function Dropdown(props) {
 
     function onOverlayClick() {
         setOpen(false);
-    }
+    };
 
     function onInputClick() {
         setOpen(true);
-    }
+    };
 
     function onOpen() {
         document.body.classList.add(css.noScroll);
         document.body.addEventListener('keydown', onBodyKeyDown);
-        // document.body.addEventListener('keydown', onSpaceOrEnter);
-    }
+    };
 
     function onClose() {
         document.body.classList.remove(css.noScroll);
         document.body.removeEventListener('keydown', onBodyKeyDown);
         document.body.removeEventListener('keydown', onSpaceOrEnter);
-    }
+    };
 
     function onBodyKeyDown(ev) {
         if (isEsc(ev)) {
             setOpen(false);
         }
-    }
+    };
 
     function onSpaceOrEnter(ev) {
         if (isClick(ev)) {
             setOpen(true);
         }
-    }
+    };
 
     function onChange(ev) {
         const target = ev.target;
@@ -78,10 +78,7 @@ export function Dropdown(props) {
             model.delete(target.value);
         }
         setModel(new Set(model));
-        // if (props.onChange) {
-        //     props.onChange([...model]);
-        // }
-    }
+    };
 
     function getValue() {
         return props.options.filter((option) => {
@@ -89,12 +86,13 @@ export function Dropdown(props) {
         }).map((option) => {
             return option.label;
         }).join(', ')
-    }
+    };
+
     return (
-        <> {/* Para poder renderizar varios elementos*/}
+        <> {/* React fragment para poder renderizar varios elementos*/}
             <div>
                 {/*TODO: Navegación por teclado */}
-                <input onClick={onInputClick} className={css.input} value={getValue()} readOnly tabIndex="1"/>
+                <input onKeyDown={onSpaceOrEnter} onClick={onInputClick} className={css.input} value={getValue()} readOnly tabIndex="1"/>
                 {open && <div className={css.dropdown}>
                     <ul onChange={onChange}>
                         {props.options.map((option) => {
