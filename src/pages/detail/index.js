@@ -11,20 +11,11 @@ export default function Detail({ pizza }) {
     const { ingredients, comments} = pizza
     return (
         <Page>
-<<<<<<< HEAD
             <div className={css.body}>
                 {/* <PizzaList  {...pizzas}/> */}
                 {/* <IngList ingredients={ingredients} /> */}
 
-=======
-            <div className={css.detbody}>
-                <div>Nombre de la Pizza</div>
-                <div>Descripcion</div>
-                <div>Precio</div>
-                {/*
-            <IngList ingredients={ingredients}/>
-            */}
->>>>>>> 776f0b01ba93928a9d59a6b5b330e9daeb42bb30
+
                 <div className={css.buttonadd}>
                     <Butt name="Añadir al carrito" />
                 </div>
