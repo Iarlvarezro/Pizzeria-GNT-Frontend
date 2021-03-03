@@ -9,7 +9,7 @@ import css from './index.module.css'
 export default function Detail({ coments, ingredients }) {
     return (
         <Page>
-            <div className={css.body}>
+            <div className={css.detbody}>
                 <div>Nombre de la Pizza</div>
                 <div>Descripcion</div>
                 <div>Precio</div>

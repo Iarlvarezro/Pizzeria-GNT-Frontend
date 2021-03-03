@@ -6,14 +6,20 @@ import css from './addcoment.module.css'
 export function AddComent (){
     return (
         <div className={css.addcoment}>
-            <div>Añade tu Comentario</div>
-            <div>{/*TODO Dropdown items*/}</div>
+
+            <div><h2>Añade tu Comentario</h2></div>
             <div>
-                <Input placeholder="Añade tu comentario"/>
+                Selecciona una Puntuacion
+                {/*TODO Dropdown items*/}</div>
+            <div>
+                <textarea>
+                    <Input placeholder="Añade tu comentario"/>
+                </textarea>
             </div>
             <div className={css.buttonadd}>
-                <Butt name="añadir" />
+                <Butt name="añadir"/>
             </div>
+
         </div>
     )
 }
