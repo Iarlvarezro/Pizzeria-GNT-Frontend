@@ -16,6 +16,7 @@ export function Page({children}){
                 <div>
                     <div>Carrito</div>
                     <div><a className={css.link} href="/login">Usuario</a></div>
+                    <div><a className={css.link} href="/sign">Registro</a></div>
                 </div>
             </div>
             <main>
