@@ -38,10 +38,3 @@ Detail.getData = async function (URLSearchParams, query) {
         coments: await response.json()
     }
 }
-/*Detail.getData = async function (URLSearchParams, query) {
-    const response = await fetch('http://localhost:3000/ingredients');
-    return {
-        ingredients: await response.json()
-    }
-
-}*/
