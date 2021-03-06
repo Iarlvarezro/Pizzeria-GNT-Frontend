@@ -1,0 +1,30 @@
+.ingbody{
+    display: grid;
+    padding: 2em;
+}
+.title{
+    width: 258px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 0 281px 40px 0;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--black);
+  }
+
+.buttonadd {
+    width: 296px;
+    height: 46px;
+    flex-grow: 0;
+    margin: 40px 218px 0 0;
+    padding: 11px 31.4px 12px 39.2px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    
+}

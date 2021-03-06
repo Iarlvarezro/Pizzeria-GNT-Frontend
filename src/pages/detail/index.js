@@ -1,40 +1,37 @@
 import React from 'react';
-import { Page, Butt, Input } from '../../components';
-/*import { IngList } from '../Addpizza/components/inglist/ing-list'*/
-import { ComentList } from '../detail/components/comentlist'
-import { AddComent } from './components/addcoment'
+import { Page, Butt } from '../../components';
+// import { IngList } from '../Addpizza/components/inglist/ing-list'
+// import { CommentList } from '../detail/components/commentlist'
+// import { PizzaList } from '../pizzas/components/pizzalist/pizza-list'
+import { AddComment } from './components/addcomment'
 import '../../styles';
 import css from './index.module.css'
 
-export default function Detail({ coments, ingredients }) {
+export default function Detail({ pizza }) {
+    const { ingredients, comments} = pizza
     return (
         <Page>
             <div className={css.body}>
-                <div>Nombre de la Pizza</div>
-                <div>Descripcion</div>
-                <div>Precio</div>
-                {/*
-            <IngList ingredients={ingredients}/>
-            */}
+                {/* <PizzaList  {...pizzas}/> */}
+                {/* <IngList ingredients={ingredients} /> */}
+
+
                 <div className={css.buttonadd}>
                     <Butt name="Añadir al carrito" />
                 </div>
                 <h2>Comentarios:</h2>
-                <ComentList coments={coments} />
+                {/* <CommentList comments={comments} /> */}
                 {/*Input de comentarios y un desplegable para score*/}
-                <AddComent />
+                <AddComment />
             </div>
         </Page>
     )
 }
 
-Detail.route = '/detail'
-
-
-
-Detail.getData = async function (URLSearchParams, query) {
-    const response = await fetch('http://localhost:3000/comments');
+Detail.route = `/pizzas/:id`
+Detail.getData = async function ({ id }) {
+    const response = await fetch(`http://localhost:3000/pizzas/${id}`);
     return {
-        coments: await response.json()
+        pizza: await response.json()
     }
 }
