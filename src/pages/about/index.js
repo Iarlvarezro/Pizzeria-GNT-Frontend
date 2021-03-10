@@ -83,7 +83,3 @@ export default function About({foo}){
         </Page>
     );
 }
-About.route = '/about';
-About.getData = async function(){
-    return {foo: 12};
-}
