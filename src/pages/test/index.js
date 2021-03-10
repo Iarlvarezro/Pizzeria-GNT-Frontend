@@ -23,7 +23,7 @@ export default function Test(){
         </div>
     ) 
 }
- //   <div className={css.test}>{JSON.stringify(props.todos)}</div>  
+
 Test.route = '/test';
 Test.getData = async function(){
     const res = await fetch('https://jsonplaceholder.typicode.com/todos');
