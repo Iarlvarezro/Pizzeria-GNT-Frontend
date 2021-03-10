@@ -3,8 +3,6 @@
     padding: 2em;
 }
 
-.buttonadd {
-    width: auto;
-    height: auto;
-    padding: 5px;
+.hidden {
+    display: none;
 }

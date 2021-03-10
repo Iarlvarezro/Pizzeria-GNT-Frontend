@@ -1,6 +1,5 @@
 import React from 'react';
-import {Page, Dropdown} from '../../components'
-import css from './index.module.css'
+import {Dropdown} from '../../components'
 export default function Test(){
     const options = [
         {

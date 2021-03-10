@@ -8,5 +8,11 @@ Detail.getData = async function ({ id }) {
         pizza: await response.json()
     }
 }
+Detail.getData = async(params,query)=>{
+    const getComments = await fetch ('http://localhost:3000/comments');
+    return {
+        comments: await getComments.json()
+    };   
+}
 
 export default Detail;
