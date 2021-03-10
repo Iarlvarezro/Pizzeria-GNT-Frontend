@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Sign, Butt } from '../../components'
+import { Input, Login, Butt } from '../../components'
 import css from './index.module.css'
 import '../../styles';
 

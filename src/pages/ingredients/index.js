@@ -2,12 +2,7 @@ import React from 'react';
 import { Page, Butt, Input } from '../../components'
 import { IngList } from '../Addpizza/components/inglist/ing-list'
 import '../../styles'
-<<<<<<< HEAD
-=======
 import css from './index.module.css'
-
-export default function Ing({ ingredients }) {
->>>>>>> 776f0b01ba93928a9d59a6b5b330e9daeb42bb30
 
 export default function Ing({ ingredients }) {
     return (
