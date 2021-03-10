@@ -15,14 +15,10 @@ export default function AddPizzas({ ingredients }) {
                 </div>
                 <div>
                     <h3>Añade un nombre</h3>
-<<<<<<< HEAD
-            </div>
-            <div>
-=======
+
                     <Input placeholder="Nombre" />
                 </div>
                 <div>
->>>>>>> 776f0b01ba93928a9d59a6b5b330e9daeb42bb30
                     <h3>Añade un precio</h3>
                     <Input placeholder="Precio" />
                 </div>
