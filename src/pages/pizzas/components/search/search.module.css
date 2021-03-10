@@ -1,5 +1,48 @@
-form {
+.busca {
+    display: flex;
+    width: 712px;
+    height: 46px;
+    flex-grow: 0;
+    margin: 0 19px 0 0;
+    padding: 12px 502px 11px 20px;
+    border-radius: 5px;
+    border: solid 1px var(--primary);
+    background-color: var(--white);
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
 }
+
+.filtra {
+    display: flex;
+    width: 49px;
+    height: 23px;
+    flex-grow: 0;
+    margin: 1px 57px 0 0;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--grey);
+}
+
+.ordenar {
+    display: flex;
+    width: 49px;
+    height: 23px;
+    flex-grow: 0;
+    margin: 1px 57px 0 0;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--grey);
+}
+
+

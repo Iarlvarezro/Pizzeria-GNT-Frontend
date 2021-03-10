@@ -4,10 +4,10 @@ import css from './search.module.css'
 
 export function Search() {
         return (
-            <Form className={css.form}>
-                <Input placeholder="Busca tu pizza favorita" />
-                <Input placeholder="Filtrar" />
-                <Input placeholder="Ordenar" />
+            <Form>
+                <Input className={css.busca} placeholder="Busca tu pizza favorita" />
+                <Input className={css.filtra} placeholder="Filtrar" />
+                <Input className={css.ordenar} placeholder="Ordenar" />
             </Form> 
         )
 }
