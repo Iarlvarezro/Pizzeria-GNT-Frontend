@@ -1,11 +1,12 @@
 import Ing from './index'
+import {IngredientService} from '../../services/ingredient-service'
 
 
 Ing.route = '/ingredients'
 Ing.getData = async function (params, query) {
-    const response = await fetch('http://localhost:3000/ingredients');
-    return { ingredients: await response.json() }
-
+    return IngredientService.getAll();
 }
+
+
 
 export default Ing;

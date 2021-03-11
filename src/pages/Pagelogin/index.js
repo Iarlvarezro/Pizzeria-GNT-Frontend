@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Login, Butt } from '../../components'
+import { Input, Login, Button } from '../../components'
 // import css from './index.module.css'
 import '../../styles';
 
@@ -16,15 +16,15 @@ export default function PageLogin() {
                 <Input placeholder="Contraseña" />
                 <Input label="Recordarme" type="checkbox" />
                 <p>¿Olvidaste tus datos?</p>
-                <Butt name="Empezar pedido" />
+                <Button name="Empezar pedido" />
             </div>
             <div>
                 <p>o con tus RRSS</p>
-                <Butt name="Google" />
+                <Button name="Google" />
             </div>
             <div>
                 <h2>¿Aún no estás registrado?</h2>
-                <Butt name="Registrarme"/>
+                <Button name="Registrarme"/>
             </div>
         </Login>
     )

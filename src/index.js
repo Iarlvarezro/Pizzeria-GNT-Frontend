@@ -2,7 +2,7 @@ import 'cross-fetch/polyfill';
 import express from 'express';
 import {loadRoutes} from './server/routes.js'
 
-const PORT = 8080;
+const PORT = 8081;
 
 (async function() {
     const app = express();
