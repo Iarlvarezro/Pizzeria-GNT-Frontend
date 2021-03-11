@@ -1,6 +1,5 @@
 import React from 'react';
-import { Input, Page, Button } from '../../components'
-import { DesplIng } from './components/ing-desplegable/ing-desplegable'
+import { Input, Page, Button, Dropdown } from '../../components'
 import { IngList } from './components/inglist/ing-list'
 import '../../styles';
 import css from './index.module.css'
@@ -24,16 +23,11 @@ export default function AddPizzas({ ingredients }) {
                 </div>
                 <div>
                     <h3>Añade los ingredientes</h3>
-                    <DesplIng ingredients={ingredients} />
+                    <Dropdown options={ingredients} />
                     <IngList ingredients={ingredients} />
                     <Button name="Añadir pizza a la carta" />
                 </div>
             </div>
         </Page>
     )
-}
-AddPizzas.route = '/AddPizzas';
-AddPizzas.getData = async function (params, query) {
-    const response = await fetch('http://localhost:3000/ingredients');
-    return { ingredients: await response.json() }
 }

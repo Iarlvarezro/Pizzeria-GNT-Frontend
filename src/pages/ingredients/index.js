@@ -1,6 +1,6 @@
 import React from 'react';
 import { Page, Button, Input } from '../../components'
-import { IngList } from '../Addpizza/components/inglist/ing-list'
+import { Listing } from './components/listing'
 import '../../styles'
 import css from './index.module.css'
 
@@ -10,7 +10,7 @@ export default function Ing({ ingredients }) {
             <div className={css.ingbody}>
                 <div>
                     <h2 className={css.title}>Todos los Ingredientes</h2>
-                        <IngList ingredients={ingredients} /> {/*Crear un nuevo componente que pinte la lista de ingredientes */}
+                        <Listing ingredients={ingredients} /> {/*Crear un nuevo componente que pinte la lista de ingredientes */}
                 </div>
                 <div>
                     <h2 className={css.title}>Crea un Nuevo Ingrediente</h2>

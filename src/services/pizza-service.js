@@ -1,4 +1,4 @@
-import {urlApi, authorize, api, resolveUrl} from '../src/api';
+import {urlApi, authorize, api, resolveUrl} from '../api/api';
 
 export class PizzaService{
     static async getAll(query){

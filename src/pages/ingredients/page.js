@@ -7,6 +7,4 @@ Ing.getData = async function (params, query) {
     return IngredientService.getAll();
 }
 
-
-
 export default Ing;

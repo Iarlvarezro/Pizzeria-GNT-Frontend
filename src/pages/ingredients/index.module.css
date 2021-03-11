@@ -1,3 +1,7 @@
+body {
+    background-color: var(--gray-50);
+}
+
 .ingbody{
     display: grid;
     padding: 2em;

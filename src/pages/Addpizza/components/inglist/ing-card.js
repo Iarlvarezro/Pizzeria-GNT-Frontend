@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function IngCard({name, prize}) {
+export function IngCard({name, price}) {
     return(
         <div >
-            <div>{name} {prize}</div>
+            <div>{name} {price}</div>
         </div>
     )
 }

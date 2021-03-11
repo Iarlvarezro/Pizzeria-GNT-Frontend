@@ -7,7 +7,7 @@ export function DesplIng(props) {
             {props.ingredients.map((ing) => {
                 return (
                     <option key={ing.id} value={ing.name}>
-                       {ing.name} {ing.prize}
+                       {ing.name} {ing.price}
                     </option>
                 )
             })}

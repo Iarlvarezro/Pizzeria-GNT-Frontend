@@ -1,5 +1,5 @@
 // TO DO: El código necesario para obtener los comentarios
-import {urlApi, api, resolveUrl} from '../api'
+import {urlApi, api, resolveUrl} from '../api/api'
 
 export class CommentService {
     static async getAll(query) {

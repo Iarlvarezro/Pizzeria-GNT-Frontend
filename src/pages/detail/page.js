@@ -1,18 +1,14 @@
+import { PizzaService } from '../../services/pizza-service';
+import { CommentService } from '../../services/comment-service';
 import Detail from './index';
 
 
 Detail.route = `/pizzas/:id`
 Detail.getData = async function ({ id }) {
-    const response = await fetch(`http://localhost:3000/pizzas/${id}`);
-    return {
-        pizza: await response.json()
-    }
+    return PizzaService.edit(id);
 }
 Detail.getData = async(params,query)=>{
-    const getComments = await fetch ('http://localhost:3000/comments');
-    return {
-        comments: await getComments.json()
-    };   
+    return CommentService .getAll(); 
 }
 
 export default Detail;
