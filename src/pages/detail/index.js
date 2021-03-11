@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Butt } from '../../components';
+import { Page, Button } from '../../components';
 import { IngList } from '../Addpizza/components/inglist/ing-list'
 import { CommentList } from '../detail/components/commentlist'
 import { AddComment } from './components/addcomment'
@@ -15,7 +15,7 @@ export default function Detail({ pizza }) {
                 {/*TODO: Recibir lista de pizzas y pintarlas*/}
 
                 <IngList ingredients={ingredients} />
-                    <Butt name="Añadir al carrito" />
+                    <Button name="Añadir al carrito" />
                 <h2>Comentarios:</h2>
                 <CommentList comments={comments} />
                 <AddComment />

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Butt} from '../../../../components/button/button'
+import {Button} from '../../../../components/button/button'
 import css from './card.module.css'
 
 export function PizzaCard({name, img, prize}){
@@ -8,9 +8,9 @@ export function PizzaCard({name, img, prize}){
             <div>{img}</div>
             <div>{name}</div>
             <div>{prize}</div>
-            <Butt name="Añadir al carro" />
+            <Button name="Añadir al carro" />
         <div>
-            <Butt name="Ver más" />
+            <Button name="Ver más" />
         </div>
             
         </div>

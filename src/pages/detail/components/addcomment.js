@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Input, Butt, Dropdown} from '../../../components'
+import {Input, Button, Dropdown} from '../../../components'
 import css from './addcomment.module.css'
 const score = [
     {
@@ -33,7 +33,7 @@ export function AddComment() {
                 <Input placeholder="Añade tu comentario"/>
             </div>
             <div className={css.buttonadd}>
-                <Butt name="añadir" />
+                <Button name="añadir" />
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Butt, Input } from '../../components'
+import { Page, Button, Input } from '../../components'
 import { IngList } from '../Addpizza/components/inglist/ing-list'
 import '../../styles'
 import css from './index.module.css'

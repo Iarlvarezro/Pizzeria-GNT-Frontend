@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Butt, Page } from '../../components'
+import { Input, Page, Button } from '../../components'
 import { DesplIng } from './components/ing-desplegable/ing-desplegable'
 import { IngList } from './components/inglist/ing-list'
 import '../../styles';
@@ -11,7 +11,7 @@ export default function AddPizzas({ ingredients }) {
             <div className={css.addbody}>
                 <div>
                     <h3>Añade una imagen</h3>
-                    <Butt name="Subir imagen" />
+                    <Button name="Subir imagen" />
                 </div>
                 <div>
                     <h3>Añade un nombre</h3>
@@ -26,7 +26,7 @@ export default function AddPizzas({ ingredients }) {
                     <h3>Añade los ingredientes</h3>
                     <DesplIng ingredients={ingredients} />
                     <IngList ingredients={ingredients} />
-                    <Butt name="Añadir pizza a la carta" />
+                    <Button name="Añadir pizza a la carta" />
                 </div>
             </div>
         </Page>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Login, Butt } from '../../components'
+import { Input, Login, Button } from '../../components'
 import css from './index.module.css'
 import '../../styles';
 
@@ -23,7 +23,7 @@ export default function SignUp() {
                         </div>
                         <Input label="He leido y acepto la Política de Privacidad" type="checkbox" />
                         <Input label="Si, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil" type="checkbox" />
-                        <Butt name="Empezar pedido" />
+                        <Button name="Empezar pedido" />
                     </div>
                 </div>
 
