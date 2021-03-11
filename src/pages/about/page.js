@@ -5,5 +5,4 @@ About.getData = async function(){
     return {foo: 12};
 }
 
-
 export default About;

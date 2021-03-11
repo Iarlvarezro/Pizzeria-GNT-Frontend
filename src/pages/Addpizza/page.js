@@ -1,4 +1,4 @@
-import Addpizza from "./index"
+import AddPizzas from "./index"
 
 AddPizzas.route = '/AddPizzas';
 AddPizzas.getData = async function (params, query) {
@@ -6,4 +6,4 @@ AddPizzas.getData = async function (params, query) {
     return { ingredients: await response.json() }
 }
 
-export default Addpizza;
+export default AddPizzas;
