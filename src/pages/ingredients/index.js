@@ -11,9 +11,7 @@ export default function Ing({ ingredients }) {
             <main className={css.ingbody}>
                 <section>
                     <h2 className={css.title}>Todos los Ingredientes</h2>
-                    <div className={'mobile'}>
-                        <IngredientList  ingredients={ingredients} />
-                    </div>
+                    <IngredientList  ingredients={ingredients} />
                         
                 </section>
                 <section>

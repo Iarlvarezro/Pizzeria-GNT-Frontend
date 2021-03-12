@@ -7,10 +7,3 @@
 .ilist {
     padding-right: 10%;
 }
-
-@media (max-width: 960px) {
-    .mobile {
-      display: flex;
-      flex-direction: column;
-    }
-}
