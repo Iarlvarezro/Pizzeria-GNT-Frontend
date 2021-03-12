@@ -1,0 +1,16 @@
+.list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ilist {
+    padding-right: 10%;
+}
+
+@media (max-width: 960px) {
+    .mobile {
+      display: flex;
+      flex-direction: column;
+    }
+}

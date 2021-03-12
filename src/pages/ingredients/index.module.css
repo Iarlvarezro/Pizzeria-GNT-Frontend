@@ -3,23 +3,13 @@ body {
 }
 
 .ingbody{
-    display: grid;
-    padding: 2em;
+    padding: 3rem;
 }
+
 .title{
-    width: 258px;
-    height: 30px;
-    flex-grow: 0;
     margin: 0 281px 40px 0;
     font-family: Quicksand;
-    font-size: 24px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: bold;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: var(--black);
   }
 
 .buttonadd {
@@ -32,3 +22,4 @@ body {
     background-color: var(--primary);
     
 }
+

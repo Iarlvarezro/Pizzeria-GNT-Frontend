@@ -4,8 +4,8 @@ import css from './button.module.css';
 
 
 export function Button(props) {
-    const {name, ...restProps} = props;
+    const {children, ...restProps} = props;
     return (
-        <button className = {css.button}>{name}</button>
+        <button className = {css.button} {...restProps}>{children}</button>
     )
 }
