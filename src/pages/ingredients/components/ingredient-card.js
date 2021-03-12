@@ -1,7 +1,6 @@
 import React from 'react';
 
-import css from './listcard.module.css';
-
+import css from './ingredient-card.module.css';
 
 export function IngredientCard({name, price}) {
     return(

@@ -1,17 +1,20 @@
 import React from 'react';
-import {IngredientCard} from './ingredient-card';
-import css from './listing.module.css';
+import { IngredientCard } from './ingredient-card';
+import css from './ingredient-list.module.css';
 
 export function IngredientList(props) {
-    return(
-        <ul className={css.list}>
-            {props.ingredients.map((ing) => {
-                return (
-                    <li className={css.ilist} key={ing.id}>
-                       <IngredientCard {...ing} />
-                    </li>
-                )
-            })}
-        </ul>
+    return (
+        <section>
+            <h2>Todos los Ingredientes</h2>
+            <ul className={css.list}>
+                {props.ingredients.map((ingredient) => {
+                    return (
+                        <li key={ingredient.id}>
+                            <IngredientCard {...ingredient} />
+                        </li>
+                    )
+                })}
+            </ul>
+        </section>
     )
- }
+}

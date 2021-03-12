@@ -4,6 +4,8 @@ html, body {
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--gray-50);
+    
 }
 h1, .h1 {
     font-size: 2.375rem;
@@ -39,8 +41,15 @@ p, .p {
     margin-top: 0rem;
     margin-bottom: 1.3125rem;
 }
+main{
+    padding: var(--space-l);
+}
+
 @media (max-width: 960px) {
     :root {
       font-size: 0.875rem;
+    }
+    main{
+        padding: var(--space-xs);
     }
 }
