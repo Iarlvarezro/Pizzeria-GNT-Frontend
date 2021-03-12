@@ -18,6 +18,7 @@ h2, .h2 {
     line-height: 2.625rem;
     margin-top: 1.3125rem;
     margin-bottom: 1.3125rem;
+    font-weight: 600;
 }
 h3, .h3 {
     font-size: 1.3125rem;
@@ -43,6 +44,9 @@ p, .p {
 }
 main{
     padding: var(--space-l);
+}
+input, button {
+    font: inherit;
 }
 
 @media (max-width: 960px) {

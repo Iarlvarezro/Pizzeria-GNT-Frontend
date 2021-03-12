@@ -1,23 +1,17 @@
 .button {
-    color: rgb(192, 28, 28);
-    font-family: sans-serif;
-    font-size: 14px;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
     font-weight: bold;
     text-transform: uppercase;
  
     /* padding, margin y borde */
  
-    padding: 20px 40px;
-    margin-right: 30px;
+    padding: 1.25rem 2.5rem;
     cursor: pointer;
     border: 0;
-    border-radius: 50px;
+    border-radius: 5px;
  
     /* propiedades para la animacion  */
  
     transition: all 0.20s linear;
-    -webkit-transition: all 0.20s linear;
-    -moz-transition: all 0.20s linear;
-    position: relative;
-    bottom: 0;
   }
