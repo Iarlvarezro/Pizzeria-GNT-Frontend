@@ -6,11 +6,13 @@
     margin-bottom: 1rem; 
     line-height: 1rem;
     color: var(--gray-gray-500);
+    padding-right: 20rem;
 }
 
 .formControl {
     display: grid;
     gap: 1rem;
+    justify-content: start;
 }
 
 .label{

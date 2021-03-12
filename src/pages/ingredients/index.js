@@ -4,7 +4,7 @@ import { IngredientList } from './components/ingredient-list'
 import { IngredientForm } from './components/ingredient-form'
 import '../../styles'
 
-export default function Ing({ ingredients }) {
+export default function Ingredients({ ingredients }) {
     return (
         <Page>
             <main>
