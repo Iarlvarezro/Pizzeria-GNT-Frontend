@@ -8,9 +8,9 @@ export function PizzaCard({name, img, prize}){
             <div>{img}</div>
             <div>{name}</div>
             <div>{prize}</div>
-            <Button name="Añadir al carro" />
+            <Button>Añadir al carro</Button>
         <div>
-            <Button name="Ver más" />
+            <Button>Ver más</Button>
         </div>
             
         </div>

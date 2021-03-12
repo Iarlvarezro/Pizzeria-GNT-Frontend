@@ -15,5 +15,8 @@ export class PizzaService{
             pizza
         }
     }
+    static async get(id){
+        const url = resolveUrl(`pizzas/${id}`, urlApi, )
+    }
 }
 //TO DO: La parte necesaria para obtener los usuarios cuando estén implementados (en un nuevo archivo: customer.js)
