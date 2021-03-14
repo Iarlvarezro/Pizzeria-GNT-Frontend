@@ -2,8 +2,8 @@
 import {urlApi, api, resolveUrl} from '../api/api'
 
 export class CommentService {
-    static async getAll(query) {
-        const url = resolveUrl('comments', urlApi, query);
+    static async getAll() {
+        const url = resolveUrl('comments', urlApi);
         const comments = await api(url).get()
         return {
             comments

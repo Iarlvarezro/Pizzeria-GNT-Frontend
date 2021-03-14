@@ -7,14 +7,13 @@ import css from './index.module.css'
 export default function AddPizzas({ ingredients }) {
     return (
         <Page>
-            <div className={css.addbody}>
+            <main className={css.addbody}>
                 <div>
                     <h3>Añade una imagen</h3>
-                    <Button name="Subir imagen" />
+                    <Button>Subir imagen</Button>
                 </div>
                 <div>
                     <h3>Añade un nombre</h3>
-
                     <Input placeholder="Nombre" />
                 </div>
                 <div>
@@ -25,9 +24,9 @@ export default function AddPizzas({ ingredients }) {
                     <h3>Añade los ingredientes</h3>
                     <Dropdown options={ingredients} />
                     <IngList ingredients={ingredients} />
-                    <Button name="Añadir pizza a la carta" />
+                    <Button>Añadir pizza a la carta</Button>
                 </div>
-            </div>
+            </main>
         </Page>
     )
 }

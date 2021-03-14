@@ -8,14 +8,14 @@ export function Page({children}){
                 <div>Icono</div>
                 <nav>
                     <ul>
-                        <li><a className={css.link} href="/">Carta</a></li>
+                        <li><a className={css.link} href="/Pizzas">Carta</a></li>
                         <li><a className={css.link} href="/AddPizzas">Añadir pizza</a></li>
                         <li><a className={css.link} href="/ingredients">Ingredientes</a></li>
                     </ul>
                 </nav>
                 <div>
                     <div>Carrito</div>
-                    <div><a className={css.link} href="/login">Usuario</a></div>
+                    <div><a className={css.link} href="/">Usuario</a></div>
                     <div><a className={css.link} href="/sign">Registro</a></div>
                 </div>
             </div>

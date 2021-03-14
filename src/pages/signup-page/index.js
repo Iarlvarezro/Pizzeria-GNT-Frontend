@@ -7,7 +7,6 @@ export default function SignUp() {
     return (
         <Login>
             <div className={css.signup}>
-
                 <div>
                     <h1>¿Quieres registrarte?</h1>
                 </div>
@@ -26,7 +25,6 @@ export default function SignUp() {
                         <Button name="Empezar pedido" />
                     </div>
                 </div>
-
             </div>
         </Login>
     )

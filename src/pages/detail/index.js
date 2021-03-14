@@ -1,26 +1,18 @@
 import React from 'react';
-import { Page, Button } from '../../components';
-import { IngList } from '../Addpizza/components/inglist/ing-list'
-import { CommentList } from '../detail/components/commentlist'
+import { Page } from '../../components';
+import { PizzaDetail } from './components/Pizza-detail/Pizza-detail'
 import { AddComment } from './components/addcomment'
 import '../../styles';
 import css from './index.module.css'
 
 export default function Detail({ pizza }) {
-    const { ingredients, comments } = pizza
     return (
         <Page>
             <main className={css.main}>
                 <h1 className={css.hidden}>Detalles</h1>
-                {/*TODO: Recibir lista de pizzas y pintarlas*/}
-
-                <IngList ingredients={ingredients} />
-                    <Button name="Añadir al carrito" />
-                <h2>Comentarios:</h2>
-                <CommentList comments={comments} />
+                <PizzaDetail pizza={pizza} />
                 <AddComment />
             </main>
-
         </Page>
     )
 }
