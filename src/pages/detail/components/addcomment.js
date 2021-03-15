@@ -26,7 +26,7 @@ const score = [
 
 export function AddComment() {
     return (
-        <div className={css.addcomment}>
+        <section className={css.addcomment}>
             <h3>Añade tu Comentario</h3>
             <Dropdown options={score} />
             <div>
@@ -35,6 +35,6 @@ export function AddComment() {
             <div className={css.buttonadd}>
                 <Button>Añadir</Button>
             </div>
-        </div>
+        </section>
     )
 }

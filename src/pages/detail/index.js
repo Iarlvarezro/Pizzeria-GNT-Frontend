@@ -9,7 +9,7 @@ export default function Detail({ pizza }) {
     return (
         <Page>
             <main className={css.main}>
-                <h1 className={css.hidden}>Detalles</h1>
+                <h1 className="visually-hidden">Detalles</h1>
                 <PizzaDetail pizza={pizza} />
                 <AddComment />
             </main>
