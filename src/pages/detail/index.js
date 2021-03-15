@@ -1,6 +1,6 @@
 import React from 'react';
 import { BreadCrumb, Page } from '../../components';
-import { PizzaDetail } from './components/Pizza-detail/Pizza-detail'
+import { PizzaDetail } from './components/Pizza-detail/pizza-detail'
 import { AddComment } from './components/addcomment'
 import '../../styles';
 import css from './index.module.css'
