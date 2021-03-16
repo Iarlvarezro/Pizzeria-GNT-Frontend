@@ -1,6 +1,6 @@
 import React from 'react'
-import { Input, Button, Dropdown } from '../../../components'
-// import css from './addcomment.module.css'
+import { Button, Dropdown } from '../../../../components'
+import css from './addcomment.module.css'
 const score = [
     {
         value: 1,
@@ -26,15 +26,11 @@ const score = [
 
 export function AddComment() {
     return (
-        <section >
+        <section className={css.list}>
             <h3>Añade tu Comentario</h3>
             <Dropdown options={score} />
-            <div>
-                <Input placeholder="Añade tu comentario" />
-            </div>
-            <div >
-                <Button>Añadir</Button>
-            </div>
+            <textarea placeholder="Añade tu comentario" className={css.textarea}></textarea>
+            <Button>Añadir</Button>
         </section>
     )
 }

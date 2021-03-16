@@ -5,14 +5,24 @@
     border: 1px solid red;
     z-index: 10;
     max-height: 100px;
-    max-width: 250px;
     overflow-y: scroll;
     overflow-x: scroll;
+    border: solid 1px var(--gray-gray-500);
+    background-color: var(--white); 
+    padding-right: 20rem;
 }
 
 .input{
     position: relative;
     z-index: 10;
+    padding: var(--space-m);
+    border-radius: .3125rem;     
+    border: solid 1px var(--gray-gray-500);
+    background-color: var(--white);  
+    margin-bottom: 1rem; 
+    line-height: 1rem;
+    color: var(--gray-gray-500);
+    padding-right: 20rem;
 }
 
 .overlay {
