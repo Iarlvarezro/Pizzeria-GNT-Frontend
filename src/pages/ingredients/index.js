@@ -1,6 +1,6 @@
 import React from 'react';
 import { Page } from '../../components'
-import { IngredientList } from './components/ingredient-list'
+import { IngredientList } from '../../components'
 import { IngredientForm } from './components/ingredient-form'
 import '../../styles'
 

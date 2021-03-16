@@ -1,6 +1,6 @@
 import React from 'react';
 import { CommentsDetailList } from './comments-detail/comments-detail-list';
-import { IngredientsDetailList } from './ingredients-detail/ingredients-detail-list';
+import { IngredientList } from '../../../../components';
 import { PizzaInformation } from './pizza-information/pizza-information'
 import { CartForm } from '../../../../components';
 
@@ -11,7 +11,7 @@ export function PizzaDetail({ pizza }) {
     return (
         <section>
             <PizzaInformation pizza={pizza} />
-            <IngredientsDetailList ingredients={ingredients} />
+            <IngredientList ingredients={ingredients} />
             <CartForm  pizza={pizza}/>
             <CommentsDetailList comments={comments} />
         </section>
