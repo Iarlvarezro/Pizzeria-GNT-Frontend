@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cloudinary-core": "2.11.3",
     "core-js": "3.8.3",
     "cross-fetch": "3.0.6",
     "express": "4.17.1",

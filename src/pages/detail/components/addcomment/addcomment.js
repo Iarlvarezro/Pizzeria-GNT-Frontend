@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Dropdown } from '../../../../components'
+import { Button, Dropdown, Form } from '../../../../components'
+import {TextArea} from './textarea'
 import css from './addcomment.module.css'
 const score = [
     {
@@ -24,13 +25,17 @@ const score = [
     }
 ]
 
-export function AddComment() {
+export function AddComment({id}) {
     return (
         <section className={css.list}>
             <h3>Añade tu Comentario</h3>
-            <Dropdown options={score} />
-            <textarea placeholder="Añade tu comentario" className={css.textarea}></textarea>
-            <Button>Añadir</Button>
+            <Form>
+                <input type="hidden" value={id}/>
+                <Dropdown options={score} />
+                {/*TODO: crear wrapper */}
+                <TextArea />
+                <Button>Añadir</Button>
+            </Form>
         </section>
     )
 }

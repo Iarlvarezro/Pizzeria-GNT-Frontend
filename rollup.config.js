@@ -25,7 +25,8 @@ const client = {
         del({ targets: 'public/dist/*' }),
         virtual(virtualEntries),
         replace({
-            'process.env.NODE_ENV': JSON.stringify('production')
+            'process.env.NODE_ENV': JSON.stringify('production'),
+            'process.env.CLOUD_NAME': JSON.stringify(process.env.CLOUD_NAME)
         }),
         styles({
             autoModules: true,
@@ -79,7 +80,8 @@ const server = {
     plugins: [
         del({ targets: 'build/*' }),
         replace({
-            'process.env.NODE_ENV': JSON.stringify('production')
+            'process.env.NODE_ENV': JSON.stringify('production'),
+            'process.env.CLOUD_NAME': JSON.stringify(process.env.CLOUD_NAME)
         }),
         styles({
             autoModules: true

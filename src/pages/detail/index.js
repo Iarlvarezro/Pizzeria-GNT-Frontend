@@ -20,7 +20,7 @@ export default function Detail({ pizza }) {
                 <h1 className="visually-hidden">Detalles</h1>
                 <BreadCrumb items={items} />
                 <PizzaDetail pizza={pizza} />
-                <AddComment />
+                <AddComment id={pizza.id} />
             </section>
         </Page>
     )
