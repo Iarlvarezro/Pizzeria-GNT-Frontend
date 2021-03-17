@@ -4,7 +4,7 @@ import css from './ingredient-list.module.css';
 
 export function IngredientList(props) {
     return (
-        <section>
+        <section className={css.section}>
             <h2>Todos los Ingredientes</h2>
             <ul className={css.list}>
                 {props.ingredients.map((ingredient) => {
