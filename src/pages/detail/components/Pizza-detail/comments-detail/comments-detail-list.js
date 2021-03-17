@@ -4,9 +4,9 @@ import css from './comments-detail-list.module.css'
 
 export function CommentsDetailList({comments}) {
     return (
-        <section className={css.list}>
+        <section>
             <h2>Comentarios</h2>
-            <ul>
+            <ul className={css.list}>
                 {comments.map((comment) => {
                     return (
                         <li key={comment.id}>

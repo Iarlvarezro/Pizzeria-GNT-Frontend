@@ -1,4 +1,4 @@
 .list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem));
+    gap: 2rem;
 }
