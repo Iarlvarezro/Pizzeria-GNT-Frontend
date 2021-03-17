@@ -12,7 +12,6 @@ export default function LoginPage() {
             <main>
                 <SignIn />
                 <SignUp />
-                <h2><a href="/Pizzas">Carta</a></h2>
             </main>
         </Login>
     )

@@ -1,8 +1,7 @@
 import React from 'react';
 import { CommentsDetailList } from './comments-detail/comments-detail-list';
-import { IngredientList } from '../../../../components';
+import { IngredientList, CartForm } from '../../../../components';
 import { PizzaInformation } from './pizza-information/pizza-information'
-import { CartForm } from '../../../../components';
 
 
 

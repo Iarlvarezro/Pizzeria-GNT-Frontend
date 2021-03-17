@@ -1,5 +1,5 @@
 import LoginPage from './index'
 
-LoginPage.route = '/login'
+LoginPage.route = '/'
 //TODO: CustomerService.getID();
 export default LoginPage;

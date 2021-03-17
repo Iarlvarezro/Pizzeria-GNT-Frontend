@@ -12,7 +12,6 @@ export function AddComment({id}) {
             <Form>
                 <input type="hidden" value={id}/>
                 <SelectForm />
-                {/*TODO: crear wrapper */}
                 <TextArea />
                 <Button>Añadir</Button>
             </Form>

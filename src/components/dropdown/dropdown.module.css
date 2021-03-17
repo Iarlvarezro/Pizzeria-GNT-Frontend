@@ -1,7 +1,6 @@
 
 .dropdown {
-    position: relative;
-    top: -1rem;
+    position: absolute;
     background: white;
     border: 1px solid red;
     z-index: 10;
