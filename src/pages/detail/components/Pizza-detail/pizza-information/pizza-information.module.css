@@ -1,0 +1,11 @@
+.description {
+    text-align: justify;
+    width: 45%;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 1.225rem;
+}
