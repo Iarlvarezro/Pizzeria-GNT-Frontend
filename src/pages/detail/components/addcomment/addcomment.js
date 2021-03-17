@@ -28,7 +28,7 @@ const score = [
 export function AddComment({id}) {
     return (
         <section className={css.list}>
-            <h3>Añade tu Comentario</h3>
+            <h2>Añade tu Comentario</h2>
             <Form>
                 <input type="hidden" value={id}/>
                 <Dropdown options={score} />
