@@ -9,7 +9,7 @@ export default function Pizzas({pizzas}) {
     return (
         <Page>
             <Search className={css.buscador} />
-            <PizzaList pizzas = {pizzas} />
+            <PizzaList pizzas={pizzas} />
         </Page>
     )
 }
