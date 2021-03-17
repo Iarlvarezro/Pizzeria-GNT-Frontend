@@ -5,7 +5,7 @@ import css from './comments-detail-list.module.css'
 export function CommentsDetailList({comments}) {
     return (
         <section className={css.list}>
-            <h3>Comentarios</h3>
+            <h2>Comentarios</h2>
             <ul>
                 {comments.map((comment) => {
                     return (

@@ -1,0 +1,16 @@
+.detailcard{
+    background-color: var(--white);
+    padding: var(--space-ss);
+    border-radius: var(--space-xs);
+    margin: 1em;
+    padding: 1rem;
+    /*width: rem;
+    height: 5rem;
+    margin: 2rem 0;
+    padding: 1rem;*/
+  }
+ 
+.scortxt{
+  font-weight: 800;
+}
+  
