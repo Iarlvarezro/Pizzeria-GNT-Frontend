@@ -1,11 +1,14 @@
 import React from 'react';
 
-export function CommentsDetailCard({ text, score }) {
+import css from './comments-detail-card.module.css';
+
+export function CommentsDetailCard({ text, score, date }) {
     return (
-        <section >
-            <div>{score}</div>
+        <section className={css.detailcard}>
+            <div>Nombre de User:</div>
+            <div className={css.scortxt}>Puntuación : {score}</div>
             <div>{text}</div>
-            {/*TODO: fecha*/}
+            <div>{date}</div>
         </section>
 
     )
