@@ -45,7 +45,7 @@ p, .p {
 main{
     padding: var(--space-l);
 }
-input, button, textarea {
+input, button, textarea, select, option {
     font: inherit;
 }
 
