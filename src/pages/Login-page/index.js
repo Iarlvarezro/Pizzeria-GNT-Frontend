@@ -9,10 +9,10 @@ import '../../styles';
 export default function LoginPage() {
     return (
         <Login>
-            <main>
+            <section>
                 <SignIn />
                 <SignUp />
-            </main>
+            </section>
         </Login>
     )
 }

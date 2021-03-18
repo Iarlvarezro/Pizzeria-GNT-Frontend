@@ -1,0 +1,9 @@
+.google {
+    padding: 1rem 4.7rem;
+    border-radius: 5px;
+    border: solid 1px var(--blue-google);
+    background-color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue-google);
+}
