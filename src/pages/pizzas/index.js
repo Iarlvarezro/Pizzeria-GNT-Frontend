@@ -8,6 +8,7 @@ import css from './index.module.css'
 export default function Pizzas({pizzas}) {
     return (
         <Page>
+            <h1 className="visually-hidden">Carta de Pizzas</h1>
             <Search className={css.buscador} />
             <PizzaList pizzas={pizzas} />
         </Page>

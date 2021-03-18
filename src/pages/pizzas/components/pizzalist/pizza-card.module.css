@@ -1,3 +1,7 @@
 .card {
-    padding: 1rem;
+    margin-left: 1rem;
+}
+.buttoncontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
