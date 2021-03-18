@@ -1,7 +1,8 @@
 .card {
-    margin-left: 1rem;
+    margin: 1rem;
 }
 .buttoncontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    grid-template-columns: auto auto;
 }

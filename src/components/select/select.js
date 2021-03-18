@@ -1,14 +1,12 @@
 import React from 'react';
-import {Form} from '../../components/form/form'
 import css from './select.module.css'
 
 export function Select(props) {
-    const {children, ...restProp} = props;
     return (
-            <select key={restProp} className={css.select}>
-                {children.map((option) => {
+            <select name="Selecciona un ingrediente" className={css.select}>
+                {props.ingredients.map((option) => {
                     return (
-                        <option value={option.id}>{option.name, option.price}</option>
+                            <option key={option.id} value={option.name}>{`${option.name} ${option.price} €`}</option>
                     )
                 })
                 }

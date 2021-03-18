@@ -3,8 +3,9 @@
     color: var(--color-primary-light);
     font-weight: bold;
     text-transform: uppercase;
-    padding: 1.25rem 5.5rem;
+    padding: 1.3rem 4.6rem 1rem 5rem;
     cursor: pointer;
     border: 1px solid var(--color-primary-light);
     border-radius: 5px;
+
 }
