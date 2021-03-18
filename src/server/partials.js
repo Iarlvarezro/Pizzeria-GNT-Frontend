@@ -6,8 +6,9 @@ return `
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Loading...</title>
+            <title>Pizza Generation</title>
             <link rel="modulepreload" href="/dist/${page}.js" />
+            <link rel="shortcut icon" type="image/jpg" href="https://iconarchive.com/download/i99744/sonya/swarm/Pizza.ico"/>
         </head>
         <body>
             <div id="app">`;
