@@ -1,5 +1,4 @@
 import cloudinary from 'cloudinary-core/cloudinary-core-shrinkwrap.js';
-console.log(process.env.CLOUD_NAME);
 const cl = new cloudinary.Cloudinary({cloud_name: process.env.CLOUD_NAME});
 
 export class CloudinaryService {
