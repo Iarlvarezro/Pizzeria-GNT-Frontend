@@ -3,7 +3,7 @@ import css from './page.module.css';
 
 export function Page({children}){
     return (
-        <div className={css.page}>
+        <div className={css.page + ' mobile'}>
             <div className={css.menu + ' on-big'}>
                 <div>Icono</div>
                 <nav>

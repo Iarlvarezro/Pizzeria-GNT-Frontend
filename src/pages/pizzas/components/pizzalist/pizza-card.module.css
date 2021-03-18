@@ -1,8 +1,18 @@
 .card {
-    margin: 1rem;
+    padding: 1rem;
 }
+
 .buttoncontainer {
     display: grid;
-    gap: 0rem;
-    grid-template-columns: auto auto;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img {
+    border-top-left-radius: var(--cardborderradius);
+    border-top-right-radius: var(--cardborderradius);
+}
+
+.button {
+    width: 100%;
 }

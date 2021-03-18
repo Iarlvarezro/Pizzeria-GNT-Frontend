@@ -1,13 +1,9 @@
 import React from 'react';
 import css from './anchor.module.css';
 
-export function Anchor(props){
-    const {name} = props;
+export function Anchor({href, text}){
+
     return (
-        <section className={css.button}>
-             <input type="hidden" value={props.id}></input>
-             <a >{name}</a>
-        </section>
-       
+             <a className={css.anchor} href={href}>{text}</a>
     )
 }
