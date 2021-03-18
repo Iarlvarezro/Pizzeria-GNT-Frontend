@@ -7,7 +7,7 @@ export function PizzaList(props) {
             <ul className={css.pizza}>
                 {props.pizzas.map((pizza) => {
                     return (
-                        <li key={pizza.id}>
+                        <li key={pizza.id} className={css.box}>
                             <PizzaCard {...pizza} />
                         </li>
                     )
