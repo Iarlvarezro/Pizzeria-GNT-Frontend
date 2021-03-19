@@ -30,7 +30,9 @@ export function getVirtualEntries(input){
             import React from 'react';
             import Component from '${input[page]}';
             const app = document.getElementById('app');
-            ReactDOM.hydrate(React.createElement(Component, window._props_), app);
+            ReactDOM.hydrate(React.createElement(Component, window._props_), app, () => {
+                document.getElementById('spinner').remove();
+            });
         `;
         return entries;
     }, {});

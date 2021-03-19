@@ -9,6 +9,11 @@
     position: absolute;
     width: 1px;
 }
+
+.block-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 960px) {
     .on-big {
       display: none;
