@@ -1,5 +1,5 @@
 import SignUp from './index'
 
-SignUp.route = '/sign'
+SignUp.route = '/signup'
 
 export default SignUp;

@@ -10,10 +10,12 @@ export class IngredientService {
     }
 
     static async create(data) {
-
+        const url = resolveUrl('ingredients', urlApi);
+        return await api(url).post(data)
     }
 
     static async remove(id) {
-
+        const url = resolveUrl(`ingredients/${id}`, urlApi);
+        return await api(url).delete();
     }
 }

@@ -9,7 +9,7 @@ export class PizzaService {
         }
     }
     static async edit(id) {
-        const url = resolveUrl(`pizzas/$(id)`, urlApi, query);
+        const url = resolveUrl(`pizzas/$(id)`, urlApi);
         const pizza = await api(url).get(url, authorize)
         return {
             pizza
@@ -21,6 +21,11 @@ export class PizzaService {
         return {
             pizza
         }
+    }
+    static async addComment(comment){
+        const {id} = comment;
+        const url = resolveUrl(`pizzas/${id}/comments`, urlApi);
+        return await api(url).post(comment)
     }
 }
 //TO DO: La parte necesaria para obtener los usuarios cuando estén implementados (en un nuevo archivo: customer.js)

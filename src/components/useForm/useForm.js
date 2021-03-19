@@ -37,6 +37,8 @@ export function useForm(frm) {
         return (control) => {
             if (control && control.form) {
                 controls.set(control, formControl)
+                const { value,checked } = control;
+                formControl.value = checked ? checked: value;
                 if (!form) {
                     setForm(control.form)
                 }

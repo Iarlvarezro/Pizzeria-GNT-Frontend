@@ -1,8 +1,13 @@
 import React from 'react';
 import css from './textarea.module.css';
 
-export function TextArea() {
+export function Control(ref) {
     return(
-     <textarea placeholder="Añade tu comentario" className={css.textarea}></textarea>
+     <textarea ref={ref} placeholder="Añade tu comentario" className={css.textarea}></textarea>
     )
+}
+
+const TextArea = React.forwardRef(Control)
+export {
+ TextArea 
 }
