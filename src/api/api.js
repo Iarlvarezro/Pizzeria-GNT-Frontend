@@ -64,3 +64,4 @@ export function api(url) {
 export * from './resolveUrl';
 export * from './authorize';
 export * from './config';
+export * from './api-call';
