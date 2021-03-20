@@ -9,3 +9,4 @@ dist
 # Archivos
 *.md
 _db.json
+google.json
