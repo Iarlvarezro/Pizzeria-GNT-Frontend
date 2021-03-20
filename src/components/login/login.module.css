@@ -27,3 +27,12 @@
     margin: auto;
     text-align: center;
 }
+
+@media (max-width: 960px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+    .main{
+        padding: var(--space-l);
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input, Login, Button, Form, FormGroup, FormControl, useForm, VALIDATORS } from '../../components'
 import css from './index.module.css'
-import {UserService} from '../../services/user-service'
+import {UserService} from '../../services/user-service-client'
 import {apiCall} from '../../api/api'
 import '../../styles';
 

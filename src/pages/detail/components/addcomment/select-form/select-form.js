@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './select-form.module.css'
 
-export function Control(ref) {
+export function Control(props,ref) {
     return (
         <select className={css.select} ref={ref} defaultValue="5">
             <option value="1">1 estrella</option>

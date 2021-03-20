@@ -1,6 +1,7 @@
 import 'cross-fetch/polyfill';
 import express from 'express';
 import {loadRoutes} from './server/routes.js'
+import {registerController} from './server/user'
 
 const PORT = 8081;
 
@@ -8,6 +9,7 @@ const PORT = 8081;
     const app = express();
     app.use(express.static('public'));
     await loadRoutes(app);
+    registerController(app)
     app.listen(PORT, () => {
         console.log(`server listening on http://localhost:${PORT}`);
     });
