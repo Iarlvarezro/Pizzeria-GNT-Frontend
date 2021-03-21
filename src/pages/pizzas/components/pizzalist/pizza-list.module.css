@@ -2,8 +2,7 @@
     border-color: black;
     display: grid;
     gap:1rem;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
 }
 
 .box {

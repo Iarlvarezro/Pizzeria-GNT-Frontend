@@ -8,4 +8,8 @@ export class UserService{
         const url = resolveUrl('/login',urlUser)
         return await api(url).post(user)   
     }
+    static async loginGoogle(user){
+        const url = resolveUrl('/login/google',urlUser)
+        return await api(url).post(user)   
+    }
 }

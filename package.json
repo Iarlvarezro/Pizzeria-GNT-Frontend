@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "cloudinary-core": "2.11.3",
+    "cookie-parser": "1.4.5",
     "core-js": "3.8.3",
     "cross-fetch": "3.0.6",
     "express": "4.17.1",
