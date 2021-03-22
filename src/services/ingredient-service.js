@@ -1,9 +1,9 @@
-import {urlApi, authorize, api, resolveUrl} from '../api/api';
+import {urlApi, api, authorize, resolveUrl} from '../api/api';
 
 export class IngredientService {
-    static async getAll() {
+    static async getAll(access_token) {
         const url = resolveUrl('ingredients', urlApi);
-        const ingredients = await api(url).get(authorize());
+        const ingredients = await api(url).get(access_token);
         return {
             ingredients
         }

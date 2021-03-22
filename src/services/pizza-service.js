@@ -8,9 +8,9 @@ export class PizzaService {
             pizzas
         }
     }
-    static async add(pizza) {
+    static async add(data) {
         const url = resolveUrl('pizzas', urlApi);
-        const pizza = await api(url).post(authorize())
+        const pizza = await api(url).post(data,authorize())
         return {
             pizza
         }

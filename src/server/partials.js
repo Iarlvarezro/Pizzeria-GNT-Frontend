@@ -19,7 +19,7 @@ export function after(page, props, session={}){
     return `</div>
     <script>window._props_ = ${JSON.stringify(props)}</script>
     <script>
-        localstorage.setItem('access_token',${JSON.stringify(access_token)})
+        localStorage.setItem('access_token',${JSON.stringify(access_token)})
     </script>
     <script src="/dist/${page}.js" type="module"></script>
     </body></html>`;
