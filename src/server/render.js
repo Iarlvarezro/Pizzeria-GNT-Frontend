@@ -3,6 +3,7 @@ import ReactDOMServer from 'react-dom/server.js';
 import { before, after } from './partials.js';
 
 export async function render(req, res, Component, page) {
+    const session = req.session || {}
     res.write(before(page));
     let props = {};
     if (Component.getData) {
@@ -11,6 +12,6 @@ export async function render(req, res, Component, page) {
     const content = ReactDOMServer.renderToNodeStream(<Component {...props} />);
     content.pipe(res, { end: false });
     content.on('end', () => {
-        res.end(after(page, props));
+        res.end(after(page, props,session));
     });
 }

@@ -12,4 +12,8 @@ export class UserService{
         const url = resolveUrl('/login/google',urlUser)
         return await api(url).post(user)   
     }
+    static async logout(sesion){
+        const url = resolveUrl(`/logout/${session}`,urlUser)
+        return await api(url).post('')   
+    }
 }

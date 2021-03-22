@@ -70,10 +70,16 @@ class UserController {
         });
         res.redirect('/');
     }
+    static async logout(req, res) {
+        await UserService.logout(req.params.id);
+        res.clearCookie('session');
+        res.redirect('/');
+    }
 }
 export function registerController(app) {
     app.post('/login', express.json(), UserController.login)
     app.post('/users', express.json(), UserController.register)
     app.post('/login/google', UserController.googleRegister)
     app.get('/login/google', UserController.google)
+    app.post('/logout/:id',UserController.logout)
 }

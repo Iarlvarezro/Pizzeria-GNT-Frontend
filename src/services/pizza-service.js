@@ -8,6 +8,13 @@ export class PizzaService {
             pizzas
         }
     }
+    static async add(pizza) {
+        const url = resolveUrl('pizzas', urlApi);
+        const pizza = await api(url).post(authorize())
+        return {
+            pizza
+        }
+    }
     static async edit(id) {
         const url = resolveUrl(`pizzas/$(id)`, urlApi);
         const pizza = await api(url).get(url, authorize)

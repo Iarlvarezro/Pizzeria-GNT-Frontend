@@ -12,7 +12,7 @@ async function exec(url, options) {
 function json(body, options) {
   return {
     ...options,
-    body: JSON.stringify(body),
+    body: JSON.stringify(body) ,
     headers: {
       "content-type": "application/json",
       ...(options.headers || {})
