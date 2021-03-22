@@ -1,3 +1,4 @@
+import {spinner} from './spinner'
 export function before(page){
 return `
     <!DOCTYPE html>
@@ -9,8 +10,10 @@ return `
             <title>Pizza Generation</title>
             <link rel="modulepreload" href="/dist/${page}.js" />
             <link rel="shortcut icon" type="image/jpg" href="https://iconarchive.com/download/i99744/sonya/swarm/Pizza.ico"/>
+            <style>${spinner()}</style>
         </head>
         <body>
+            <div id="spinner"></div>
             <div id="app">`;
 }
 
