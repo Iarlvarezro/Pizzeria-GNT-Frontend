@@ -10,7 +10,7 @@ class UserController {
             httpOnly: true, // xss
             // secure: true // mitm
         });
-        res.redirect('/');
+        res.json({location: '/'})
     }
     static async register(req, res) {
         const session = await UserService.add(req.body);
@@ -18,7 +18,7 @@ class UserController {
             httpOnly: true, // xss
             // secure: true // mitm
         });
-        res.redirect('/');
+        res.json({location: '/'})
     }
     static async googleRegister(_, res) {
         if (!googleData) {

@@ -11,7 +11,8 @@ export function SignIn() {
     })
     const {register, handlerSubmit} = useForm(frm)
     const submit = async (data)=>{
-        await apiCall(UserService.login,data)
+       const {location} = await apiCall(UserService.login,data);
+       window.location.replace(location);
     }
     return (
         <section className={css.section}>

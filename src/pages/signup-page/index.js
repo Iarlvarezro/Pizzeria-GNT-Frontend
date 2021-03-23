@@ -14,7 +14,8 @@ export default function SignUp() {
     });
     const { handlerSubmit, register } = useForm(frm)
     const submit = async (data)=>{
-        await apiCall(UserService.add,data)
+       const {location} = await apiCall(UserService.add,data)
+       window.location.replace(location)
     }
     return (
         <Login>
