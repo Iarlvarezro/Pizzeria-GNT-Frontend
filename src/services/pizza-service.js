@@ -1,8 +1,8 @@
 import { urlApi, authorize, api, resolveUrl } from '../api/api';
 
 export class PizzaService {
-    static async getAll() {
-        const url = resolveUrl('pizzas', urlApi);
+    static async getAll(query) {
+        const url = resolveUrl('pizzas', urlApi, query);
         const pizzas = await api(url).get()
         return {
             pizzas

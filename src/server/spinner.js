@@ -9,8 +9,10 @@ export function spinner(){
   background-color: #b3d4fc;
   display: -webkit-flex;
   display: flex;
-  position: sticky;
+  position: absolute;
+  right: 0;
   top: 0;
+  left: 0;
 }
 #spinner::before {
   animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;

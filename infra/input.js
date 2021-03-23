@@ -32,6 +32,7 @@ export function getVirtualEntries(input){
             const app = document.getElementById('app');
             ReactDOM.hydrate(React.createElement(Component, window._props_), app, () => {
                 document.getElementById('spinner').remove();
+                app.removeAttribute('hidden');
             });
         `;
         return entries;

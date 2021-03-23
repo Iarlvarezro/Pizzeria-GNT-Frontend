@@ -7,6 +7,7 @@
 }
 .google_content{
     display: grid;
+    align-items: center;
     grid-template-columns: 1.5rem 1fr;
 }
 .rss{
@@ -28,7 +29,7 @@
  
     /* padding, margin y borde */
  
-    padding: 1rem;
+    padding: var(--space-xs);
     cursor: pointer;
     border: 0;
     border-radius: 5px;

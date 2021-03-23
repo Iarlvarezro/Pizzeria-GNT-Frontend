@@ -6,9 +6,8 @@ export function Header({open}){
     return (
         <header className={css.header + " on-small"}>
             <MenuButton onClick={open}/>
-            <span>Logo</span>
-            <span>L</span>
-            <span>C</span>
+            <img className={css.logo} src="/assets/logo-responsive.svg" />
+            <img src="/assets/icono-carrito.svg"/>
         </header>
     )
 }

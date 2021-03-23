@@ -3,7 +3,10 @@ import {PizzaService} from "../../services/pizza-service"
 
 Pizzas.route = '/'
 Pizzas.getData = async function (params, query) {
-    return PizzaService.getAll();
+    return {
+        ...(await PizzaService.getAll(query)),
+        query
+    }
 }
 
 export default Pizzas;

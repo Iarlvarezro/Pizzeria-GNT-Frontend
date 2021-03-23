@@ -1,6 +1,4 @@
 .search {
     display: grid;
-    grid-template-columns: 1fr 10.25rem;
-    gap: 1rem;
 }
 

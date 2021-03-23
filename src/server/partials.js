@@ -14,7 +14,7 @@ return `
         </head>
         <body>
             <div id="spinner"></div>
-            <div id="app">`;
+            <div id="app" hidden>`;
 }
 
 export function after(page, props, session={}){

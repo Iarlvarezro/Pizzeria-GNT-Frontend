@@ -17,6 +17,11 @@
     text-decoration: none;
 }
 
+.section {
+    display: grid;
+    gap: var(--space-xs);
+}
+
 .icono {
     width: 56.65%;
     margin: auto;

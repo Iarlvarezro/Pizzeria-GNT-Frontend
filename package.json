@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "run-p mock build:dev",
+    "start": "run-p build:dev",
     "build": "rollup -c",
     "build:dev": "rollup -c rollup.config.dev.js -w",
     "serve": "node build/server.js",

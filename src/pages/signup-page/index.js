@@ -19,25 +19,15 @@ export default function SignUp() {
     return (
         <Login>
             <section className={css.signup}>
-                <div>
-                    <h1>¿Quieres registrarte?</h1>
-                </div>
+                <h1>¿Quieres registrarte?</h1>
                 <div className={css.signup}>
-                    <div>
                         <Form onSubmit={handlerSubmit(submit)}>
                             <Input placeholder="Tu email"  ref={register(frm.email)} />
-                            <div>
-                                <Input placeholder="Nombre" ref={register(frm.name)}/>
-                            </div>
+                            <Input placeholder="Nombre" ref={register(frm.name)}/>
                             <Input placeholder="Apellidos"  ref={register(frm.surname)} />
-                            <div>
-                                <Input type="password" placeholder="Password"  ref={register(frm.password)} />
-                            </div>
-                            <Input label="He leido y acepto la Política de Privacidad" type="checkbox" />
-                            <Input label="Si, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil" type="checkbox" />
-                            <Button type="submit">Enviar</Button>
+                            <Input type="password" placeholder="Password"  ref={register(frm.password)} />
+                            <Button className={css.button} type="submit">Enviar</Button>
                         </Form>
-                    </div>
                 </div>
             </section>
         </Login>
