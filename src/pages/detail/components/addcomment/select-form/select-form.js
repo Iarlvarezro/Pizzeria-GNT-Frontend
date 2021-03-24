@@ -3,7 +3,7 @@ import css from './select-form.module.css'
 
 export function Control(props,ref) {
     return (
-        <select className={css.select} ref={ref} defaultValue="5">
+        <select className={css.select + ' fill_width'} ref={ref} defaultValue="5">
             <option value="1">1 estrella</option>
             <option value="2">2 estellas</option>
             <option value="3">3 estrellas</option>

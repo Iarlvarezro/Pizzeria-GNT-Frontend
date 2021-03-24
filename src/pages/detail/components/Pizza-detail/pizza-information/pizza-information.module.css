@@ -10,6 +10,14 @@
 }
 
 .wrapper {
-    max-width: 45%;
+    max-width: 60%;
     margin: 1rem auto;
 }
+
+
+@media (max-width: 960px) {
+    .wrapper{
+        max-width: 100%;
+    }
+  }
+  

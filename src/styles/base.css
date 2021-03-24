@@ -56,4 +56,7 @@ input, button, textarea, select, option {
     main{
         padding: var(--space-xs);
     }
+    .fill_width{
+        width: 100%;
+    }
 }

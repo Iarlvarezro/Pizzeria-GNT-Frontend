@@ -18,7 +18,7 @@ export function CartForm({pizza, className}) {
         <Form onSubmit={handlerSubmit(submit)}> 
             
             <input type="hidden" value={pizza.id} ref={register(frm.pizza_id)}></input>
-            <Button className={className} >Añadir al carrito</Button>
+            <Button className={className + ' fill_width'} >Añadir al carrito</Button>
             
         </Form>
     )

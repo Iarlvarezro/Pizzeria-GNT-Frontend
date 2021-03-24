@@ -24,7 +24,7 @@ export function AddComment({id}) {
                 <input type="hidden" value={id} ref={register(frm.id)}/>
                 <SelectForm ref={register(frm.score)}/>
                 <TextArea ref={register(frm.text)} />
-                <Button type="submit">Añadir</Button>
+                <Button className="fill_width" type="submit">Añadir</Button>
             </Form>
         </section>
     )
