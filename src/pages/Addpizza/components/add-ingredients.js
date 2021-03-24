@@ -1,13 +1,22 @@
 import React from 'react';
 import { Select, IngredientList, Button } from '../../../components'
 
-export function AddIngredients({ingredients}) {
+export function AddIngredients({ingredients, control}) {
+    const [selectedIngredients, setSelectedIngredients] = React.useState([]);
+    function addIngredient(ev){
+        const id = ev.target.value;
+        const ing = ingredients.find((ing) => ing.id === id);
+        if(!selectedIngredients.includes(ing)){
+            selectedIngredients.push(ing);
+        }
+        setSelectedIngredients([...selectedIngredients]);
+        control.value = selectedIngredients.map((ing) => ing.id);
+    }
     return (
-        <section>
-            <h2>Añade los ingredientes</h2>
-            <Select ingredients={ingredients} /> 
-            <IngredientList ingredients={ingredients} />
+        <div>
+            <Select onChange={addIngredient} ingredients={ingredients} /> 
+            {Boolean(selectedIngredients.length) && <IngredientList ingredients={selectedIngredients} />}
             <Button>Añadir pizza a la carta</Button>
-        </section>
+        </div>
     )
 }

@@ -17,9 +17,6 @@
   grid-area:score;
 }
 
-.user {
-  grid-area: userDate;
-}
 
 .text {
   grid-area: text;
