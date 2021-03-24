@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page,Input, Form, FormControl,FormGroup,useForm } from '../../components'
+import { Page,Input, Form,Button, FormControl,FormGroup,useForm } from '../../components'
 import { AddImage } from './components/add-image';
 import { AddIngredients } from './components/add-ingredients';
 import {PizzaService} from '../../services/pizza-service';
@@ -30,6 +30,7 @@ export default function AddPizzas({ ingredients }) {
                     <Input className={css.input} label="Añade un nombre" placeholder="Pizza" ref={register(frm.name)}/>
                     <Input className={css.input} label="Descripción" placeholder="Descripción..." ref={register(frm.description)}/>
                     <AddIngredients ingredients={ingredients} control={frm.ingredients} />
+                    <Button className="fill_width">Añadir pizza a la carta</Button>
                 </Form>
             </section>
         </Page> 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, IngredientList, Button } from '../../../components'
+import { Select, IngredientList } from '../../../components'
 
 export function AddIngredients({ingredients, control}) {
     const [selectedIngredients, setSelectedIngredients] = React.useState([]);
@@ -16,7 +16,6 @@ export function AddIngredients({ingredients, control}) {
         <div>
             <Select onChange={addIngredient} ingredients={ingredients} /> 
             {Boolean(selectedIngredients.length) && <IngredientList ingredients={selectedIngredients} />}
-            <Button>Añadir pizza a la carta</Button>
         </div>
     )
 }

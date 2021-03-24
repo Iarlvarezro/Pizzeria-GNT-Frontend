@@ -24,3 +24,10 @@
     outline-offset: 1px;
     outline-color: var(--color-primary-light);
 }
+
+@media (max-width: 960px) {
+    .label{
+        width: 100%;
+        text-align: center;
+    }
+}
