@@ -14,7 +14,7 @@ export function SignUp() {
                 <Form action="/login/google" method="POST">
                     <Button className={css.google}>
                         <div className={css.google_content}>
-                            <img src="/assets/google-icon.svg" />
+                            <img alt="" src="/assets/google-icon.svg" />
                         Google
                     </div>
                     </Button>
