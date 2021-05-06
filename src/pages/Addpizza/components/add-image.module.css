@@ -1,0 +1,33 @@
+.section {
+    display: grid;
+    gap: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.img {
+    max-height: 300px;
+}
+
+.label {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: var(--space-xs);
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor:pointer;
+    width: fit-content;
+}
+.labelFocused {
+    background-color: #ab2020;
+    outline-style: solid;
+    outline-offset: 1px;
+    outline-color: var(--color-primary-light);
+}
+
+@media (max-width: 960px) {
+    .label{
+        width: 100%;
+        text-align: center;
+    }
+}

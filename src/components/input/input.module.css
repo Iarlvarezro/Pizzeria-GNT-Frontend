@@ -1,0 +1,25 @@
+.input {
+    padding: var(--space-s);
+    border-radius: .3125rem;     
+    border: solid 1px var(--gray-gray-500);
+    background-color: var(--white);  
+    margin-bottom: 1rem; 
+    line-height: 1rem;
+    color: var(--gray-gray-500);
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.formControl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.label{
+    font-weight: 600;
+}
+
+

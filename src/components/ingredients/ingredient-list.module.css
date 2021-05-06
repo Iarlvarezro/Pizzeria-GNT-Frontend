@@ -1,0 +1,9 @@
+.list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+.section {
+    margin-bottom: 1rem
+}

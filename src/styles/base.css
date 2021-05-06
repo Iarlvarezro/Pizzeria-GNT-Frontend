@@ -4,6 +4,8 @@ html, body {
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--gray-50);
+    min-width: 350px;
 }
 h1, .h1 {
     font-size: 2.375rem;
@@ -16,6 +18,7 @@ h2, .h2 {
     line-height: 2.625rem;
     margin-top: 1.3125rem;
     margin-bottom: 1.3125rem;
+    font-weight: 600;
 }
 h3, .h3 {
     font-size: 1.3125rem;
@@ -39,8 +42,21 @@ p, .p {
     margin-top: 0rem;
     margin-bottom: 1.3125rem;
 }
+main{
+    padding: var(--space-l);
+}
+input, button, textarea, select, option {
+    font: inherit;
+}
+
 @media (max-width: 960px) {
     :root {
       font-size: 0.875rem;
+    }
+    main{
+        padding: var(--space-xs);
+    }
+    .fill_width{
+        width: 100%;
     }
 }

@@ -1,0 +1,23 @@
+.pizza {
+    border-color: black;
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+}
+
+.box {
+    background-color: var(--white);
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    object-fit: contain;
+    border-radius: var(--cardborderradius);
+    transition: transform 0.2s;
+}
+:root{
+    --cardborderradius: 0.25rem;
+}
+
+.box:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}

@@ -1,8 +1,11 @@
 import React from 'react';
+import css from './button.module.css';
 
-export function Butt(props) {
-    const {name, ...restProps} = props;
+
+
+export function Button(props) {
+    const {children, className='', ...restProps} = props;
     return (
-        <button {...restProps}>{name}</button>
+        <button className = {css.button + ' ' + className} {...restProps}>{children}</button>
     )
 }

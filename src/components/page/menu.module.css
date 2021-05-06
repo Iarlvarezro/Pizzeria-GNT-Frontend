@@ -1,0 +1,36 @@
+.menu {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-xl);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: var(--elevation-4);
+}
+
+.link {
+    color: var(--color-primary-text);
+    text-decoration: none;
+}
+
+.section {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.icono {
+    width: 56.65%;
+    margin: auto;
+    display: block; 
+}
+
+@media (max-width: 960px) {
+    .menu {
+        position: fixed;
+        width: var(--menu-width);
+    }
+}

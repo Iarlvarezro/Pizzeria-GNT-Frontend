@@ -12,6 +12,17 @@ export function getEntries() {
     return input;
 }
 
+export function getServerEntries(){
+    const input = {};
+    const pattern = 'src/pages/*/page.js';
+    const files = fg.sync(pattern);
+    for (let file of files) {
+        const [name] = mm.capture(pattern, file);
+        input[name] = file;
+    }
+    return input;
+}
+
 export function getVirtualEntries(input){
     return Object.keys(input).reduce((entries, page) => {
         entries[page] = `
@@ -19,7 +30,10 @@ export function getVirtualEntries(input){
             import React from 'react';
             import Component from '${input[page]}';
             const app = document.getElementById('app');
-            ReactDOM.hydrate(React.createElement(Component, window._props_), app);
+            ReactDOM.hydrate(React.createElement(Component, window._props_), app, () => {
+                document.getElementById('spinner').remove();
+                app.removeAttribute('hidden');
+            });
         `;
         return entries;
     }, {});
@@ -34,7 +48,7 @@ export function getVirtualInput(input){
 export function getInput(){
     const input = getEntries();
     return {
-        input,
+        input: getServerEntries(),
         virtualInput: getVirtualInput(input),
         virtualEntries: getVirtualEntries(input)
     }

@@ -1,0 +1,11 @@
+.anchor{
+    color: var(--color-primary-light);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 5px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+

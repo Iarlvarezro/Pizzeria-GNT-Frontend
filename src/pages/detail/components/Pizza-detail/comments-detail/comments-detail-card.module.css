@@ -1,0 +1,23 @@
+.detailcard{
+    display: grid;
+    grid-template-areas: 
+    "userDate"
+    "score"
+    "text";
+    grid-template-columns: 1fr 15rem;
+    grid-template-rows: auto;
+    background-color: var(--white);
+    padding: var(--space-ss);
+    border-radius: var(--space-xs);
+  
+  }
+ 
+.scortxt{
+  font-weight: 800;
+  grid-area:score;
+}
+
+
+.text {
+  grid-area: text;
+}

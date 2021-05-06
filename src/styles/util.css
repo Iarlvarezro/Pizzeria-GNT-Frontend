@@ -9,6 +9,11 @@
     position: absolute;
     width: 1px;
 }
+
+.block-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 960px) {
     .on-big {
       display: none;
@@ -18,4 +23,10 @@
     .on-small {
       display: none;
     }
+}
+
+@media (max-width: 960px) {
+  .mobile {
+    display: block;
+  }
 }

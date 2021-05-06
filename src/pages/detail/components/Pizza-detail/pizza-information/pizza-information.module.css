@@ -1,0 +1,23 @@
+.description {
+    text-align: justify;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 1.225rem;
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 1rem auto;
+}
+
+
+@media (max-width: 960px) {
+    .wrapper{
+        max-width: 100%;
+    }
+  }
+  

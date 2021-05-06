@@ -15,7 +15,7 @@ function getPages(){
 async function setupRoute(app, page){
     const componentPath = path.join(process.cwd(), 'build', `${page}.js`);
     const Component = await import(`file://${componentPath}`).then((mod) => mod.default);
-    app.get(Component.route, (req, res) => {
+    app.get(Component.route, Component.middelwares || [], (req, res) => {
         render(req, res, Component, page);
     });
 }

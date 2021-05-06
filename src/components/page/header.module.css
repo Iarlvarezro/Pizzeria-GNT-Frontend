@@ -1,0 +1,13 @@
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: var(--space-m);
+    place-items: center;
+    height: 3.37rem;
+    padding: 0 1rem;
+}
+.logo {
+    height: 2.37rem
+}

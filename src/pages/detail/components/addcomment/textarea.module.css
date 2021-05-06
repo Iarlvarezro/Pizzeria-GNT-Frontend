@@ -1,0 +1,13 @@
+.textarea {
+   
+    border-radius: .3125rem;     
+    border: solid 0px var(--gray-gray-500);
+    background-color: var(--white);  
+    margin-bottom: 1rem; 
+    line-height: 1rem;
+    color: var(--gray-gray-500);
+    display: grid;
+    resize: none;
+    padding-bottom: 4rem;
+    width: 100%;
+}

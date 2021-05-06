@@ -1,0 +1,18 @@
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    font-weight: bold;
+    text-transform: uppercase;
+ 
+    /* padding, margin y borde */
+ 
+    padding: var(--space-xs);
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    width: fit-content;
+ 
+    /* propiedades para la animacion  */
+ 
+    transition: all 0.20s linear;
+  }

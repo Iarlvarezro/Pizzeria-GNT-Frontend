@@ -1,3 +1,11 @@
+#Carpetas
 node_modules
 .vscode
 build
+dist
+
+
+# Archivos
+*.md
+_db.json
+google.json

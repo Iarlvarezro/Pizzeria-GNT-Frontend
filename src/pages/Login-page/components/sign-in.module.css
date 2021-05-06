@@ -1,0 +1,12 @@
+.anchor {
+    color: var(--white);
+    text-decoration: none;
+}
+.button{
+  width: 100%;
+}
+@media (max-width: 960px) {
+    .h2 {
+      font-size: 1.35rem;
+    }
+}
